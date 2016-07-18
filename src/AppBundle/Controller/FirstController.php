@@ -79,11 +79,16 @@ class FirstController extends Controller
     {
 
         $podsetnik = $this->getDoctrine()->getRepository('AppBundle:Podsetnik')->findOneByidPodsetnik($id);
-        $em = $this->getDoctrine()->getManager();
-        $em->remove($podsetnik);
-        $em->flush();
 
-        return $this->redirectToRoute('reminders', 301);
+        if($this->getUser()->getIdKorisnik() == $podsetnik->getIdKorisnik()->getIdKorisnik()){
+
+            $em = $this->getDoctrine()->getManager();
+            $em->remove($podsetnik);
+            $em->flush();
+
+        }
+
+        return $this->redirectToRoute('reminders',Array(), 301);
     }
 
 
