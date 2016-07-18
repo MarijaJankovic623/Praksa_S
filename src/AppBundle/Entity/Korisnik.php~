@@ -1,0 +1,47 @@
+<?php
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Korisnik
+ *
+ * @ORM\Table(name="korisnik", uniqueConstraints={@ORM\UniqueConstraint(name="korisnicko_ime_UNIQUE", columns={"korisnicko_ime"}), @ORM\UniqueConstraint(name="lozinka_UNIQUE", columns={"lozinka"})})
+ * @ORM\Entity
+ */
+class Korisnik
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="korisnicko_ime", type="string", length=100, nullable=false)
+     */
+    private $korisnickoIme;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="lozinka", type="string", length=100, nullable=false)
+     */
+    private $lozinka;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="email", type="string", length=100, nullable=false)
+     */
+    private $email;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_korisnik", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $idKorisnik;
+
+
+}
+

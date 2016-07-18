@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="AppBundle\Entity\Podsetnik" table="podsetnik">
+    <indexes>
+      <index name="id_korisnik_idx" columns="id_korisnik"/>
+    </indexes>
+    <id name="idPodsetnik" type="integer" column="id_podsetnik">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="naziv" type="string" column="naziv" length="45" nullable="true">
+      <options>
+        <option name="fixed"/>
+        <option name="default">Podsetnik</option>
+      </options>
+    </field>
+    <field name="opis" type="string" column="opis" length="2000" nullable="false">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="vreme" type="string" column="vreme" length="5" nullable="false">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="ponedeljak" type="integer" column="ponedeljak" nullable="true">
+      <options>
+        <option name="unsigned"/>
+        <option name="default">0</option>
+      </options>
+    </field>
+    <field name="utorak" type="integer" column="utorak" nullable="true">
+      <options>
+        <option name="unsigned"/>
+        <option name="default">0</option>
+      </options>
+    </field>
+    <field name="sreda" type="integer" column="sreda" nullable="true">
+      <options>
+        <option name="unsigned"/>
+        <option name="default">0</option>
+      </options>
+    </field>
+    <field name="cetvrtak" type="integer" column="cetvrtak" nullable="true">
+      <options>
+        <option name="unsigned"/>
+        <option name="default">0</option>
+      </options>
+    </field>
+    <field name="petak" type="integer" column="petak" nullable="true">
+      <options>
+        <option name="unsigned"/>
+        <option name="default">0</option>
+      </options>
+    </field>
+    <field name="subota" type="integer" column="subota" nullable="true">
+      <options>
+        <option name="unsigned"/>
+        <option name="default">0</option>
+      </options>
+    </field>
+    <field name="nedelja" type="integer" column="nedelja" nullable="true">
+      <options>
+        <option name="unsigned"/>
+        <option name="default">0</option>
+      </options>
+    </field>
+    <many-to-one field="idKorisnik" target-entity="Korisnik" fetch="LAZY">
+      <join-columns>
+        <join-column name="id_korisnik" referenced-column-name="id_korisnik"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>
