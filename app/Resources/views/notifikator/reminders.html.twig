@@ -1,0 +1,68 @@
+{% extends 'base.html.twig' %}
+
+{% block menu %}
+    <li class="active">
+        <a href="{{ path('reminders') }}">Pregled podsetnika</a>
+    </li>
+    <li>
+        <a href="{{ path('add') }}">Dodaj novi podsetnik</a>
+    </li>
+    <li>
+        <a href="{{ path('logout') }}">Izloguj se</a>
+    </li>
+{% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">
+                MOJI PODSETNICI
+            </h1>
+        </div>
+    </div>
+    <!-- /.row -->
+    {% set i = 0 %}
+    {% for podsetnik in podsetnici %}
+
+        {% if (i % 3 == 0) %}
+            <div class='row'>
+        {% endif %}
+
+        {% set i = i+1 %}
+
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><i class="fa fa-fw fa-check"></i><b>{{ podsetnik.naziv }}</h4>
+                </div>
+                <div class="panel-body">
+
+                    <p>{{ podsetnik.opis }}</p>
+                    <hr>
+                    <p>{{ podsetnik.vreme }}</p>
+                    <hr>
+                    {% if podsetnik.ponedeljak == 1 %}  <p>PONEDELJAK</p> {% endif %}
+                    {% if podsetnik.utorak == 1 %}  <p>UTORAK</p> {% endif %}
+                    {% if podsetnik.sreda == 1 %}  <p>SREDA</p> {% endif %}
+                    {% if podsetnik.cetvrtak == 1 %}  <p>CETVRTAK</p> {% endif %}
+                    {% if podsetnik.petak == 1 %}  <p>PETAK</p> {% endif %}
+                    {% if podsetnik.subota == 1 %}  <p>SUBOTA</p> {% endif %}
+                    {% if podsetnik.nedelja == 1 %}  <p>NEDELJA</p> {% endif %}
+
+
+                    <hr>
+
+                    <a href="{{ path('delete',{'id':podsetnik.idPodsetnik}) }}" class="btn btn-default"> Obrisi </a>
+                </div>
+            </div>
+        </div>
+        {% if (i % 3 == 0 ) %} </div> {% endif %}
+    {% endfor %}
+
+
+
+
+
+{% endblock %}
+
+

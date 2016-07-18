@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    {% if error %}
+        <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+    {% endif %}
+
+    <div class="row">
+        <div class="col-md-8">
+            <h3>ULOGUJ SE</h3>
+            <form name="logovanje" id="logovanjeForm" action="{{ path('login') }} " method="POST">
+                <div class="control-group form-group">
+
+                    <div class="controls">
+                        <label>Korisnicko ime:</label>
+                        <input type="text" class="form-control" name="_username" required
+                               data-validation-required-message="Please enter your name.">
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+                <div class="control-group form-group">
+                    <div class="controls">
+                        <label>Lozinka:</label>
+                        <input type="tel" class="form-control" name="_password" required
+                               data-validation-required-message="Please enter your phone number.">
+                    </div>
+                </div>
+
+                <div id="success">
+                    <h4>
+                        {% if poruka is defined %}
+                            {{ poruka }}
+                        {% endif %}
+                    </h4>
+                </div>
+                <!-- For success/fail messages -->
+                <button type="submit" class="btn btn-primary" name="logovanjeButton">Uloguj se</button>
+            </form>
+        </div>
+
+    </div>
+
+
+
+{% endblock %}
+
+

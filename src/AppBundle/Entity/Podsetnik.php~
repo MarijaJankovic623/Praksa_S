@@ -1,0 +1,106 @@
+<?php
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Podsetnik
+ *
+ * @ORM\Table(name="podsetnik", indexes={@ORM\Index(name="id_korisnik_idx", columns={"id_korisnik"})})
+ * @ORM\Entity
+ */
+class Podsetnik
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="naziv", type="string", length=45, nullable=true)
+     */
+    private $naziv = 'Podsetnik';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="opis", type="string", length=2000, nullable=false)
+     */
+    private $opis;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="vreme", type="string", length=5, nullable=false)
+     */
+    private $vreme;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="ponedeljak", type="integer", nullable=true)
+     */
+    private $ponedeljak = '0';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="utorak", type="integer", nullable=true)
+     */
+    private $utorak = '0';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="sreda", type="integer", nullable=true)
+     */
+    private $sreda = '0';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="cetvrtak", type="integer", nullable=true)
+     */
+    private $cetvrtak = '0';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="petak", type="integer", nullable=true)
+     */
+    private $petak = '0';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="subota", type="integer", nullable=true)
+     */
+    private $subota = '0';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="nedelja", type="integer", nullable=true)
+     */
+    private $nedelja = '0';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_podsetnik", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $idPodsetnik;
+
+    /**
+     * @var \AppBundle\Entity\Korisnik
+     *
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Korisnik")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="id_korisnik", referencedColumnName="id_korisnik")
+     * })
+     */
+    private $idKorisnik;
+
+
+}
+
