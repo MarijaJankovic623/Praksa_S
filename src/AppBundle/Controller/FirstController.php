@@ -39,6 +39,9 @@ class FirstController extends Controller
         // get the login error if there is one
         $error = $authenticationUtils->getLastAuthenticationError();
 
+        if($error)
+        var_dump($error->getMessage());
+
         // last username entered by the user
         $lastUsername = $authenticationUtils->getLastUsername();
 
@@ -79,13 +82,14 @@ class FirstController extends Controller
     {
 
         $podsetnik = $this->getDoctrine()->getRepository('AppBundle:Podsetnik')->findOneByidPodsetnik($id);
+        if($podsetnik) {
+            if ($this->getUser()->getIdKorisnik() == $podsetnik->getIdKorisnik()->getIdKorisnik()) {
 
-        if($this->getUser()->getIdKorisnik() == $podsetnik->getIdKorisnik()->getIdKorisnik()){
+                $em = $this->getDoctrine()->getManager();
+                $em->remove($podsetnik);
+                $em->flush();
 
-            $em = $this->getDoctrine()->getManager();
-            $em->remove($podsetnik);
-            $em->flush();
-
+            }
         }
 
         return $this->redirectToRoute('reminders',Array(), 301);

@@ -9,7 +9,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
  * Korisnik
  *
  * @ORM\Table(name="korisnik", uniqueConstraints={@ORM\UniqueConstraint(name="korisnicko_ime_UNIQUE", columns={"korisnicko_ime"}), @ORM\UniqueConstraint(name="lozinka_UNIQUE", columns={"lozinka"})})
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="AppBundle\Entity\KorisnikRepository")
  */
 class Korisnik implements UserInterface, \Serializable
 {
