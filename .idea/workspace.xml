@@ -2,12 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7851e15-ee72-45b2-83c5-0250e6fb0882" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/KorisnikRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Reminder.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/User.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Korisnik.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Podsetnik.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/config/doctrine/Korisnik.orm.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/config/doctrine/Podsetnik.orm.xml" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/KorisnikRepository.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/UserRepository.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/notifikator/addreminder.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/notifikator/addreminder.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/notifikator/registration.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/notifikator/registration.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/notifikator/reminders.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/notifikator/reminders.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/FirstController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/FirstController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Korisnik.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Korisnik.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/config/doctrine/Korisnik.orm.xml" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/config/doctrine/Korisnik.orm.xml" />
     </list>
     <ignored path="notifikatorSymfony.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,68 +37,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FirstController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FirstController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/FirstController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="274">
+              <caret line="162" column="43" selection-start-line="162" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
               <folding>
                 <element signature="e#40#71#0#PHP" expanded="true" />
+                <element signature="e#718#747#1#PHP" expanded="true" />
+                <element signature="e#1794#1830#0#PHP" expanded="true" />
+                <element signature="e#2424#2453#0#PHP" expanded="true" />
+                <element signature="e#3035#3068#0#PHP" expanded="true" />
+                <element signature="e#3318#3338#1#PHP" expanded="true" />
+                <element signature="e#5081#5116#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Korisnik.orm.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/config/doctrine/Korisnik.orm.xml">
+      <file leaf-file-name="registration.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/notifikator/registration.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="security.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KorisnikRepository.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/KorisnikRepository.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="19" column="36" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="36" />
+            <state relative-caret-position="189">
+              <caret line="17" column="54" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="54" />
               <folding>
-                <element signature="e#118#180#0#PHP" expanded="true" />
+                <element signature="e#12#26#0#Twig" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Korisnik.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Korisnik.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="11" column="69" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding>
-                <element signature="e#36#68#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Podsetnik.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Podsetnik.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1717">
-              <caret line="101" column="24" selection-start-line="101" selection-start-column="24" selection-end-line="101" selection-end-column="24" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -104,22 +76,25 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/notifikator/registration.html.twig" />
-        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml.dist" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/app/Resources/views/notifikator/index.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/notifikator/reminders.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Podsetnik.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/notifikator/addreminder.html.twig" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Korisnik2.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Korisnik.php" />
-        <option value="$PROJECT_DIR$/app/config/security.yml" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/FirstController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/config/doctrine/Korisnik.orm.xml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/KorisnikRepository.php" />
+        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/app/Resources/views/notifikator/addreminder.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Reminder.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/notifikator/reminders.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/FirstController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/UserRepository.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/app/Resources/views/notifikator/registration.html.twig" />
       </list>
     </option>
   </component>
@@ -163,8 +138,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -212,36 +187,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="AppBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="notifikatorSymfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="notifikatorSymfony" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doctrine" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -375,7 +320,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
   </component>
@@ -442,7 +387,8 @@
       <workItem from="1468585565585" duration="8111000" />
       <workItem from="1468830537991" duration="6042000" />
       <workItem from="1468838616925" duration="596000" />
-      <workItem from="1468840879635" duration="7739000" />
+      <workItem from="1468840879635" duration="11383000" />
+      <workItem from="1468912855282" duration="19172000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/MarijaJankovic623/Praksa_S&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;odradjeno brisanje tj zastita istog">
       <created>1468843129741</created>
@@ -458,11 +404,18 @@
       <option name="project" value="LOCAL" />
       <updated>1468843200500</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ripozitori">
+      <created>1468850579243</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1468850579243</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40490000" />
+    <option name="totallyTimeSpent" value="63306000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -470,7 +423,6 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -478,6 +430,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -502,13 +455,38 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Merge branch 'master' of https://github.com/MarijaJankovic623/Praksa_S&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;odradjeno brisanje tj zastita istog" />
     <MESSAGE value="brisanje dorada" />
-    <option name="LAST_COMMIT_MESSAGE" value="brisanje dorada" />
+    <MESSAGE value="ripozitori" />
+    <option name="LAST_COMMIT_MESSAGE" value="ripozitori" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="33" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -521,7 +499,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -531,6 +508,12 @@
           <caret line="132" column="50" selection-start-line="132" selection-start-column="50" selection-end-line="132" selection-end-column="50" />
           <folding>
             <element signature="e#40#71#0#PHP" expanded="true" />
+            <element signature="e#718#747#1#PHP" expanded="true" />
+            <element signature="e#1794#1830#0#PHP" expanded="true" />
+            <element signature="e#2424#2453#0#PHP" expanded="true" />
+            <element signature="e#3035#3068#0#PHP" expanded="true" />
+            <element signature="e#3318#3338#1#PHP" expanded="true" />
+            <element signature="e#5081#5116#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -555,7 +538,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -563,23 +548,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Podsetnik.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6613">
-          <caret line="389" column="34" selection-start-line="389" selection-start-column="34" selection-end-line="389" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Podsetnik.php" />
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/FirstController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#40#71#0#PHP" expanded="true" />
+            <element signature="e#718#747#1#PHP" expanded="true" />
+            <element signature="e#1794#1830#0#PHP" expanded="true" />
+            <element signature="e#2424#2453#0#PHP" expanded="true" />
+            <element signature="e#3035#3068#0#PHP" expanded="true" />
+            <element signature="e#3318#3338#1#PHP" expanded="true" />
+            <element signature="e#5081#5116#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -592,19 +579,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Korisnik.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1989">
-          <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Korisnik.php" />
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/FirstController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#40#71#0#PHP" expanded="true" />
+            <element signature="e#718#747#1#PHP" expanded="true" />
+            <element signature="e#1794#1830#0#PHP" expanded="true" />
+            <element signature="e#2424#2453#0#PHP" expanded="true" />
+            <element signature="e#3035#3068#0#PHP" expanded="true" />
+            <element signature="e#3318#3338#1#PHP" expanded="true" />
+            <element signature="e#5081#5116#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -623,6 +610,12 @@
           <caret line="92" column="8" selection-start-line="92" selection-start-column="8" selection-end-line="92" selection-end-column="8" />
           <folding>
             <element signature="e#40#71#0#PHP" expanded="true" />
+            <element signature="e#718#747#1#PHP" expanded="true" />
+            <element signature="e#1794#1830#0#PHP" expanded="true" />
+            <element signature="e#2424#2453#0#PHP" expanded="true" />
+            <element signature="e#3035#3068#0#PHP" expanded="true" />
+            <element signature="e#3318#3338#1#PHP" expanded="true" />
+            <element signature="e#5081#5116#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -641,17 +634,17 @@
           <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding>
             <element signature="e#40#71#0#PHP" expanded="true" />
+            <element signature="e#718#747#1#PHP" expanded="true" />
+            <element signature="e#1794#1830#0#PHP" expanded="true" />
+            <element signature="e#2424#2453#0#PHP" expanded="true" />
+            <element signature="e#3035#3068#0#PHP" expanded="true" />
+            <element signature="e#3318#3338#1#PHP" expanded="true" />
+            <element signature="e#5081#5116#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Podsetnik.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6205">
-          <caret line="365" column="0" selection-start-line="365" selection-start-column="0" selection-end-line="365" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Podsetnik.php" />
     <entry file="file://$PROJECT_DIR$/app/Resources/views/notifikator/reminders.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -666,13 +659,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Korisnik.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2091">
-          <caret line="123" column="20" selection-start-line="123" selection-start-column="20" selection-end-line="123" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Korisnik.php" />
     <entry file="file://$PROJECT_DIR$/web/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -691,13 +678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-51">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/notifikator/registration.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -722,20 +702,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/notifikator/reminders.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="45" column="33" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/services.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -747,38 +713,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Korisnik2.php" />
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/notifikator/login.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="16" column="79" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Podsetnik.php" />
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/KorisnikRepository.php" />
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Korisnik.php" />
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/config/doctrine/Korisnik.orm.xml" />
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/notifikator/addreminder.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Korisnik2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1923">
-          <caret line="168" column="27" selection-start-line="168" selection-start-column="22" selection-end-line="168" selection-end-column="27" />
+        <state relative-caret-position="68">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="72" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+        <state relative-caret-position="413">
+          <caret line="58" column="29" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -791,65 +752,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/notifikator/login.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="16" column="79" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="79" />
+        <state relative-caret-position="357">
+          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Podsetnik.php">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/notifikator/addreminder.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1717">
-          <caret line="101" column="24" selection-start-line="101" selection-start-column="24" selection-end-line="101" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/FirstController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="-272">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
           <folding>
-            <element signature="e#40#71#0#PHP" expanded="true" />
+            <element signature="e#12#26#0#Twig" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/KorisnikRepository.php">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/notifikator/reminders.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="19" column="36" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="36" />
+          <caret line="41" column="64" selection-start-line="41" selection-start-column="64" selection-end-line="41" selection-end-column="64" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Reminder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="980">
+          <caret line="73" column="24" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/UserRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
             <element signature="e#118#180#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Korisnik.php">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="69" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="-510">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
           <folding>
-            <element signature="e#36#68#0#PHP" expanded="true" />
+            <element signature="e#118#150#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/notifikator/registration.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-          <folding />
+        <state relative-caret-position="189">
+          <caret line="17" column="54" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="54" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/config/doctrine/Korisnik.orm.xml">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/FirstController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
-          <folding />
+        <state relative-caret-position="274">
+          <caret line="162" column="43" selection-start-line="162" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+          <folding>
+            <element signature="e#40#71#0#PHP" expanded="true" />
+            <element signature="e#718#747#1#PHP" expanded="true" />
+            <element signature="e#1794#1830#0#PHP" expanded="true" />
+            <element signature="e#2424#2453#0#PHP" expanded="true" />
+            <element signature="e#3035#3068#0#PHP" expanded="true" />
+            <element signature="e#3318#3338#1#PHP" expanded="true" />
+            <element signature="e#5081#5116#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

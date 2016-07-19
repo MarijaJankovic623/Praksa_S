@@ -5,7 +5,7 @@
         <a href="{{ path('reminders') }}">Pregled podsetnika</a>
     </li>
     <li>
-        <a href="{{ path('add') }}">Dodaj novi podsetnik</a>
+        <a href="{{ path('addreminder') }}">Dodaj novi podsetnik</a>
     </li>
     <li>
         <a href="{{ path('logout') }}">Izloguj se</a>
@@ -22,7 +22,7 @@
     </div>
     <!-- /.row -->
     {% set i = 0 %}
-    {% for podsetnik in podsetnici %}
+    {% for reminder in reminders %}
 
         {% if (i % 3 == 0) %}
             <div class='row'>
@@ -33,26 +33,26 @@
         <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h4><i class="fa fa-fw fa-check"></i><b>{{ podsetnik.naziv }}</h4>
+                    <h4><i class="fa fa-fw fa-check"></i><b>{{ reminder.name }}</h4>
                 </div>
                 <div class="panel-body">
 
-                    <p>{{ podsetnik.opis }}</p>
+                    <p>{{ reminder.description }}</p>
                     <hr>
-                    <p>{{ podsetnik.vreme }}</p>
+                    <p>{{ reminder.hours  }}:{{ reminder.minutes  }}</p>
                     <hr>
-                    {% if podsetnik.ponedeljak == 1 %}  <p>PONEDELJAK</p> {% endif %}
-                    {% if podsetnik.utorak == 1 %}  <p>UTORAK</p> {% endif %}
-                    {% if podsetnik.sreda == 1 %}  <p>SREDA</p> {% endif %}
-                    {% if podsetnik.cetvrtak == 1 %}  <p>CETVRTAK</p> {% endif %}
-                    {% if podsetnik.petak == 1 %}  <p>PETAK</p> {% endif %}
-                    {% if podsetnik.subota == 1 %}  <p>SUBOTA</p> {% endif %}
-                    {% if podsetnik.nedelja == 1 %}  <p>NEDELJA</p> {% endif %}
+                    {% if reminder.mon == true %}  <p>PONEDELJAK</p> {% endif %}
+                    {% if reminder.tue == true %}  <p>UTORAK</p> {% endif %}
+                    {% if reminder.wed == true %}  <p>SREDA</p> {% endif %}
+                    {% if reminder.thu == true %}  <p>CETVRTAK</p> {% endif %}
+                    {% if reminder.fri == true %}  <p>PETAK</p> {% endif %}
+                    {% if reminder.sat == true %}  <p>SUBOTA</p> {% endif %}
+                    {% if reminder.sun == true %}  <p>NEDELJA</p> {% endif %}
 
 
                     <hr>
 
-                    <a href="{{ path('delete',{'id':podsetnik.idPodsetnik}) }}" class="btn btn-default"> Obrisi </a>
+                    <a href="{{ path('delete',{'id':reminder.id}) }}" class="btn btn-default"> Obrisi </a>
                 </div>
             </div>
         </div>

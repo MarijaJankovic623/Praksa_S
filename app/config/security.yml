@@ -12,11 +12,11 @@ security:
                        roles: 'ROLE_USER'
        my_provider:
            entity:
-               class: AppBundle:Korisnik
+               class: AppBundle:User
 
    encoders:
        Symfony\Component\Security\Core\User\User: plaintext
-       AppBundle\Entity\Korisnik: plaintext
+       AppBundle\Entity\User: bcrypt
 
 
    firewalls:
@@ -39,7 +39,7 @@ security:
 
    access_control:
            - {path: ^/reminders , roles: ROLE_USER }
-           - {path: ^/add , roles: ROLE_USER }
+           - {path: ^/addreminder , roles: ROLE_USER }
            - {path: ^/makeNew , roles: ROLE_USER }
            - {path: ^/delete , roles: ROLE_USER }
 

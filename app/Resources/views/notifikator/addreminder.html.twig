@@ -5,7 +5,7 @@
         <a href="{{ path('reminders')}}">Pregled podsetnika</a>
     </li>
     <li class="active">
-        <a href="{{ path('add')}}">Dodaj novi podsetnik</a>
+        <a href="{{ path('addreminder')}}">Dodaj novi podsetnik</a>
     </li>
     <li>
         <a href="{{ path('logout') }}">Izloguj se</a>
@@ -14,12 +14,17 @@
 
 {% block body %}
 
-    <!-- Contact Form -->
-    <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+
+
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    {{ form_end(form) }}
+    <!--
+
     <div class="row">
         <div class="col-md-8">
             <h3>DODAJ PODSETNIK</h3>
-            <form name="dodavanje" id="dodavanjeForm" action="{{ path('makeNew') }} " method="POST">
+            <form name="dodavanje" id="dodavanjeForm" action=" " method="POST">
                 <div class="control-group form-group">
 
                     <div class="controls">
@@ -52,13 +57,13 @@
 
 
                 <div id="success"></div>
-                <!-- For success/fail messages -->
+
                 <button type="submit" class="btn btn-primary" name="dodajButton">DODAJ</button>
             </form>
         </div>
 
     </div>
-    <!-- /.row -->
+   -->
 {% endblock %}
 
 
